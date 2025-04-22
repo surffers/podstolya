@@ -1,0 +1,1160 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Дизайнерские подстолья</title>
+<script src="https://cdn.tailwindcss.com/3.4.16"></script>
+<script>tailwind.config={theme:{extend:{colors:{primary:'#333333',secondary:'#666666'},borderRadius:{'none':'0px','sm':'4px',DEFAULT:'8px','md':'12px','lg':'16px','xl':'20px','2xl':'24px','3xl':'32px','full':'9999px','button':'8px'}}}}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet">
+<link rel="stylesheet" href="/style.css">
+<script src="/script.js"></script>
+</head>
+<body class="bg-white text-gray-900">
+<!-- Навигация -->
+<nav class="bg-white border-b border-gray-200 fixed top-0 left-0 right-0 z-70">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="flex justify-between h-20">
+<div class="flex items-center">
+<span class="text-2xl font-['Pacifico'] bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent">Подстолья</span>
+</div>
+<div class="hidden md:flex items-center space-x-10">
+<a href="#advantages" class="text-gray-600 hover:text-primary transition-colors text-sm uppercase tracking-wider font-medium">Преимущества</a>
+<a href="#variants" class="text-gray-600 hover:text-primary transition-colors text-sm uppercase tracking-wider font-medium">Варианты</a>
+<a href="#process" class="text-gray-600 hover:text-primary transition-colors text-sm uppercase tracking-wider font-medium">Процесс</a>
+<a href="#contact" class="text-gray-600 hover:text-primary transition-colors text-sm uppercase tracking-wider font-medium">Контакты</a>
+</div>
+<div class="flex items-center">
+<a href="tel:+74951234567" class="flex items-center bg-gray-100 px-4 py-2 rounded-full hover:bg-gray-200 transition-colors">
+<div class="w-5 h-5 flex items-center justify-center mr-2">
+<i class="ri-phone-line text-primary"></i>
+</div>
+<span class="text-gray-700 font-medium">+7 (495) 123-45-67</span>
+</a>
+</div>
+</div>
+</div>
+</nav>
+<!-- Hero секция -->
+<section class="relative overflow-hidden bg-gradient-to-r from-gray-50 to-white mt-20">
+<div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+<div class="relative z-10">
+<div class="inline-block bg-primary/10 text-primary font-medium px-4 py-2 rounded-full text-sm mb-6">
+Инновационный дизайн 2025
+</div>
+<h1 class="text-4xl md:text-6xl font-bold text-gray-900 mb-6 leading-tight">
+Революционные <span class="text-primary">подстолья</span> для вашей мебели
+</h1>
+<p class="text-xl text-gray-700 mb-8">Уникальные металлические конструкции в стиле минимализм, созданные с использованием передовых технологий</p>
+<div class="flex flex-col sm:flex-row gap-4 mb-8">
+<button onclick="openModal('orderModal')" class="bg-primary text-white px-8 py-4 text-lg font-medium !rounded-button hover:bg-primary/90 transition-colors whitespace-nowrap shadow-lg flex items-center justify-center">
+<i class="ri-shopping-cart-line mr-2"></i>
+Заказать со скидкой 20%
+</button>
+<button onclick="openModal('calcModal')" class="bg-white text-primary border-2 border-primary px-8 py-4 text-lg font-medium !rounded-button hover:bg-primary/5 transition-colors whitespace-nowrap flex items-center justify-center">
+<i class="ri-calculator-line mr-2"></i>
+Рассчитать стоимость
+</button>
+</div>
+<div class="flex items-center gap-8">
+<div class="flex items-center">
+<div class="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mr-3">
+<i class="ri-timer-line text-2xl text-primary"></i>
+</div>
+<div>
+<p class="font-medium text-gray-900">5 дней</p>
+<p class="text-sm text-gray-600">на производство</p>
+</div>
+</div>
+<div class="flex items-center">
+<div class="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mr-3">
+<i class="ri-shield-check-line text-2xl text-primary"></i>
+</div>
+<div>
+<p class="font-medium text-gray-900">3 года</p>
+<p class="text-sm text-gray-600">гарантии</p>
+</div>
+</div>
+</div>
+</div>
+<div class="relative">
+<div class="slider-container relative overflow-hidden rounded-2xl shadow-2xl">
+<div class="slider-wrapper flex transition-transform duration-500">
+<img src="/img/1.jpg" alt="Дизайнерское подстолье 1" class="w-full object-cover flex-shrink-0">
+<img src="/img/2.jpg" alt="Дизайнерское подстолье 2" class="w-full object-cover flex-shrink-0">
+<img src="/img/3.jpg" alt="Дизайнерское подстолье 3" class="w-full object-cover flex-shrink-0">
+<img src="/img/4.jpg" alt="Дизайнерское подстолье 4" class="w-full object-cover flex-shrink-0">
+<img src="/img/5.jpg" alt="Дизайнерское подстолье 5" class="w-full object-cover flex-shrink-0">
+</div>
+<button class="slider-btn prev absolute left-4 top-1/2 -translate-y-1/2 w-10 h-10 bg-white/80 rounded-full flex items-center justify-center text-gray-800 hover:bg-white transition-colors">
+<i class="ri-arrow-left-s-line text-xl"></i>
+</button>
+<button class="slider-btn next absolute right-4 top-1/2 -translate-y-1/2 w-10 h-10 bg-white/80 rounded-full flex items-center justify-center text-gray-800 hover:bg-white transition-colors">
+<i class="ri-arrow-right-s-line text-xl"></i>
+</button>
+<div class="slider-dots absolute bottom-4 left-1/2 -translate-x-1/2 flex gap-2">
+<button class="w-2 h-2 rounded-full bg-white/50 dot active"></button>
+<button class="w-2 h-2 rounded-full bg-white/50 dot"></button>
+<button class="w-2 h-2 rounded-full bg-white/50 dot"></button>
+</div>
+</div>
+<div class="absolute -bottom-6 -right-6 bg-white p-4 rounded-lg shadow-lg">
+<div class="flex items-center gap-2">
+<div class="w-8 h-8 bg-primary/10 rounded-full flex items-center justify-center">
+<i class="ri-award-line text-xl text-primary"></i>
+</div>
+<div>
+<p class="font-medium text-gray-900">Премиум качество</p>
+<p class="text-sm text-gray-600">Сталь 4мм</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Преимущества -->
+<section id="advantages" class="py-16 bg-gray-50">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<h2 class="text-3xl font-bold text-center text-gray-900 mb-12">Преимущества наших подстолий</h2>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+<div onclick="openModal('advantageModal1')" class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow cursor-pointer border border-gray-100">
+<div class="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mb-4">
+<div class="w-6 h-6 flex items-center justify-center text-primary">
+<i class="ri-shield-check-line"></i>
+</div>
+</div>
+<h3 class="text-xl font-semibold text-gray-900 mb-2">Прочная сталь 4мм</h3>
+<p class="text-gray-600">Надежная конструкция из высококачественной стали толщиной 4мм выдерживает большие нагрузки</p>
+</div>
+<div onclick="openModal('advantageModal2')" class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow cursor-pointer border border-gray-100">
+<div class="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mb-4">
+<div class="w-6 h-6 flex items-center justify-center text-primary">
+<i class="ri-paint-brush-line"></i>
+</div>
+</div>
+<h3 class="text-xl font-semibold text-gray-900 mb-2">Порошковая покраска</h3>
+<p class="text-gray-600">Долговечное покрытие, устойчивое к царапинам, влаге и выцветанию</p>
+</div>
+<div onclick="openModal('advantageModal3')" class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow cursor-pointer border border-gray-100">
+<div class="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mb-4">
+<div class="w-6 h-6 flex items-center justify-center text-primary">
+<i class="ri-ruler-line"></i>
+</div>
+</div>
+<h3 class="text-xl font-semibold text-gray-900 mb-2">Любой размер под заказ</h3>
+<p class="text-gray-600">Изготовим подстолье по вашим индивидуальным размерам для любого проекта</p>
+</div>
+<div onclick="openModal('advantageModal4')" class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow cursor-pointer border border-gray-100">
+<div class="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mb-4">
+<div class="w-6 h-6 flex items-center justify-center text-primary">
+<i class="ri-award-line"></i>
+</div>
+</div>
+<h3 class="text-xl font-semibold text-gray-900 mb-2">Гарантия 3 года</h3>
+<p class="text-gray-600">Предоставляем официальную гарантию на все изделия и сервисное обслуживание</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Варианты и цены -->
+<section id="variants" class="py-16 bg-white">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<h2 class="text-3xl font-bold text-center text-gray-900 mb-12">Варианты и цены</h2>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<div class="bg-white p-6 rounded-lg shadow-md border border-gray-200">
+<img src="https://readdy.ai/api/search-image?query=Small%20black%20metal%20table%20base%2C%20square%20design%2C%20minimalist%20style%2C%20industrial%20look%2C%20for%20coffee%20table%2C%20professional%20product%20photography%20on%20white%20background&width=400&height=300&seq=3&orientation=landscape" alt="Подстолье для журнального стола" class="w-full h-48 object-cover rounded-lg mb-6">
+<h3 class="text-xl font-semibold text-gray-900 mb-2">Для журнального стола</h3>
+<ul class="text-gray-600 mb-6 space-y-2">
+<li class="flex items-center">
+<div class="w-5 h-5 flex items-center justify-center text-primary mr-2">
+<i class="ri-check-line"></i>
+</div>
+Размер: 400×400×450 мм
+</li>
+<li class="flex items-center">
+<div class="w-5 h-5 flex items-center justify-center text-primary mr-2">
+<i class="ri-check-line"></i>
+</div>
+Материал: сталь 4 мм
+</li>
+<li class="flex items-center">
+<div class="w-5 h-5 flex items-center justify-center text-primary mr-2">
+<i class="ri-check-line"></i>
+</div>
+Покраска: черный матовый
+</li>
+</ul>
+<div class="flex items-center justify-between mb-6">
+<p class="text-2xl font-bold text-primary">7 900 ₽</p>
+<p class="text-gray-500 line-through">9 800 ₽</p>
+</div>
+<button onclick="openModal('orderModalSmall')" class="w-full bg-primary text-white py-3 !rounded-button hover:bg-primary/90 transition-colors whitespace-nowrap">Заказать</button>
+</div>
+<div class="bg-white p-6 rounded-lg shadow-md border border-gray-200">
+<img src="https://readdy.ai/api/search-image?query=Medium%20black%20metal%20table%20base%2C%20rectangular%20design%2C%20minimalist%20style%2C%20industrial%20look%2C%20for%20dining%20table%2C%20professional%20product%20photography%20on%20white%20background&width=400&height=300&seq=4&orientation=landscape" alt="Подстолье для обеденного стола" class="w-full h-48 object-cover rounded-lg mb-6">
+<h3 class="text-xl font-semibold text-gray-900 mb-2">Для обеденного стола</h3>
+<ul class="text-gray-600 mb-6 space-y-2">
+<li class="flex items-center">
+<div class="w-5 h-5 flex items-center justify-center text-primary mr-2">
+<i class="ri-check-line"></i>
+</div>
+Размер: 700×700×750 мм
+</li>
+<li class="flex items-center">
+<div class="w-5 h-5 flex items-center justify-center text-primary mr-2">
+<i class="ri-check-line"></i>
+</div>
+Материал: сталь 4 мм
+</li>
+<li class="flex items-center">
+<div class="w-5 h-5 flex items-center justify-center text-primary mr-2">
+<i class="ri-check-line"></i>
+</div>
+Покраска: черный матовый
+</li>
+</ul>
+<div class="flex items-center justify-between mb-6">
+<p class="text-2xl font-bold text-primary">12 500 ₽</p>
+<p class="text-gray-500 line-through">15 600 ₽</p>
+</div>
+<button onclick="openModal('orderModalSmall')" class="w-full bg-primary text-white py-3 !rounded-button hover:bg-primary/90 transition-colors whitespace-nowrap">Заказать</button>
+</div>
+<div class="bg-white p-6 rounded-lg shadow-md border border-gray-200">
+<img src="https://readdy.ai/api/search-image?query=Large%20black%20metal%20table%20base%2C%20rectangular%20design%2C%20minimalist%20style%2C%20industrial%20look%2C%20for%20conference%20table%2C%20professional%20product%20photography%20on%20white%20background&width=400&height=300&seq=5&orientation=landscape" alt="Подстолье для конференц-стола" class="w-full h-48 object-cover rounded-lg mb-6">
+<h3 class="text-xl font-semibold text-gray-900 mb-2">Для конференц-стола</h3>
+<ul class="text-gray-600 mb-6 space-y-2">
+<li class="flex items-center">
+<div class="w-5 h-5 flex items-center justify-center text-primary mr-2">
+<i class="ri-check-line"></i>
+</div>
+Размер: 1200×800×750 мм
+</li>
+<li class="flex items-center">
+<div class="w-5 h-5 flex items-center justify-center text-primary mr-2">
+<i class="ri-check-line"></i>
+</div>
+Материал: сталь 4 мм
+</li>
+<li class="flex items-center">
+<div class="w-5 h-5 flex items-center justify-center text-primary mr-2">
+<i class="ri-check-line"></i>
+</div>
+Покраска: черный матовый
+</li>
+</ul>
+<div class="flex items-center justify-between mb-6">
+<p class="text-2xl font-bold text-primary">18 900 ₽</p>
+<p class="text-gray-500 line-through">23 500 ₽</p>
+</div>
+<button onclick="openModal('orderModalSmall')" class="w-full bg-primary text-white py-3 !rounded-button hover:bg-primary/90 transition-colors whitespace-nowrap">Заказать</button>
+</div>
+</div>
+</div>
+</section>
+<!-- Процесс заказа -->
+<!-- Специальное предложение -->
+<section class="py-16 bg-gradient-to-r from-gray-50 to-white">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="bg-white rounded-lg shadow-lg p-8 relative overflow-hidden">
+<div class="absolute top-0 right-0 w-40 h-40 bg-primary/10 rounded-full -translate-y-1/2 translate-x-1/2"></div>
+<div class="relative">
+<div class="inline-block bg-primary/10 text-primary font-semibold px-4 py-2 rounded-full text-sm mb-4">Специальное предложение</div>
+<h2 class="text-3xl font-bold text-gray-900 mb-4">Скидка 20% на первый заказ</h2>
+<div class="flex items-center gap-4 mb-8">
+<div class="flex items-center gap-2">
+<div class="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center">
+<i class="ri-time-line text-2xl text-primary"></i>
+</div>
+<div>
+<p class="text-sm text-gray-600">До конца акции осталось:</p>
+<div id="timer" class="text-xl font-bold text-primary"></div>
+</div>
+</div>
+<div class="h-12 w-px bg-gray-200"></div>
+<p class="text-gray-600">Закажите подстолье прямо сейчас и получите скидку 20% на первый заказ.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
+<div class="flex items-center">
+<div class="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mr-4">
+<div class="w-6 h-6 flex items-center justify-center text-primary">
+<i class="ri-timer-line"></i>
+</div>
+</div>
+<div>
+<h3 class="font-semibold text-gray-900">5 дней</h3>
+<p class="text-gray-600">Срок изготовления</p>
+</div>
+</div>
+<div class="flex items-center">
+<div class="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mr-4">
+<div class="w-6 h-6 flex items-center justify-center text-primary">
+<i class="ri-truck-line"></i>
+</div>
+</div>
+<div>
+<h3 class="font-semibold text-gray-900">Бесплатно</h3>
+<p class="text-gray-600">Доставка по городу</p>
+</div>
+</div>
+<div class="flex items-center">
+<div class="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mr-4">
+<div class="w-6 h-6 flex items-center justify-center text-primary">
+<i class="ri-shield-check-line"></i>
+</div>
+</div>
+<div>
+<h3 class="font-semibold text-gray-900">3 года</h3>
+<p class="text-gray-600">Гарантия качества</p>
+</div>
+</div>
+</div>
+<button onclick="openModal('orderModal')" class="bg-primary text-white px-8 py-4 text-lg font-medium !rounded-button hover:bg-primary/90 transition-colors whitespace-nowrap shadow-lg">Заказать со скидкой</button>
+</div>
+</div>
+</div>
+</section>
+<!-- Квиз -->
+<section class="py-16 bg-white hidden">
+<div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="text-center mb-12">
+<h2 class="text-3xl font-bold text-gray-900 mb-4">Рассчитайте стоимость подстолья за 1 минуту</h2>
+<p class="text-gray-600">Ответьте на несколько вопросов и получите точный расчет стоимости с учетом ваших требований</p>
+</div>
+<div id="quiz" class="bg-white rounded-lg shadow-lg p-8">
+<div class="quiz-step" data-step="1">
+<div class="mb-8">
+<div class="text-sm text-primary font-medium mb-2">Вопрос 1 из 4</div>
+<h3 class="text-xl font-semibold text-gray-900 mb-4">Для какого помещения нужен стол?</h3>
+<div class="grid grid-cols-2 gap-4">
+<label class="flex flex-col items-center p-4 border border-gray-200 rounded-lg cursor-pointer hover:border-primary transition-colors">
+<input type="radio" name="room" value="home" class="hidden">
+<div class="w-12 h-12 flex items-center justify-center text-primary mb-3">
+<i class="ri-home-line text-2xl"></i>
+</div>
+<span class="text-center">Для дома</span>
+</label>
+<label class="flex flex-col items-center p-4 border border-gray-200 rounded-lg cursor-pointer hover:border-primary transition-colors">
+<input type="radio" name="room" value="office" class="hidden">
+<div class="w-12 h-12 flex items-center justify-center text-primary mb-3">
+<i class="ri-building-line text-2xl"></i>
+</div>
+<span class="text-center">Для офиса</span>
+</label>
+</div>
+</div>
+</div>
+<div class="quiz-step hidden" data-step="2">
+<div class="mb-8">
+<div class="text-sm text-primary font-medium mb-2">Вопрос 2 из 4</div>
+<h3 class="text-xl font-semibold text-gray-900 mb-4">Какой тип стола вам нужен?</h3>
+<div class="grid grid-cols-2 gap-4">
+<label class="flex flex-col items-center p-4 border border-gray-200 rounded-lg cursor-pointer hover:border-primary transition-colors">
+<input type="radio" name="type" value="dining" class="hidden">
+<div class="w-12 h-12 flex items-center justify-center text-primary mb-3">
+<i class="ri-restaurant-line text-2xl"></i>
+</div>
+<span class="text-center">Обеденный</span>
+</label>
+<label class="flex flex-col items-center p-4 border border-gray-200 rounded-lg cursor-pointer hover:border-primary transition-colors">
+<input type="radio" name="type" value="work" class="hidden">
+<div class="w-12 h-12 flex items-center justify-center text-primary mb-3">
+<i class="ri-computer-line text-2xl"></i>
+</div>
+<span class="text-center">Рабочий</span>
+</label>
+</div>
+</div>
+</div>
+<div class="quiz-step hidden" data-step="3">
+<div class="mb-8">
+<div class="text-sm text-primary font-medium mb-2">Вопрос 3 из 4</div>
+<h3 class="text-xl font-semibold text-gray-900 mb-4">Какие размеры стола вам нужны?</h3>
+<div class="grid grid-cols-2 gap-4">
+<label class="flex flex-col items-center p-4 border border-gray-200 rounded-lg cursor-pointer hover:border-primary transition-colors">
+<input type="radio" name="size" value="standard" class="hidden">
+<div class="w-12 h-12 flex items-center justify-center text-primary mb-3">
+<i class="ri-ruler-2-line text-2xl"></i>
+</div>
+<span class="text-center">Стандартный<br>(700×700×750)</span>
+</label>
+<label class="flex flex-col items-center p-4 border border-gray-200 rounded-lg cursor-pointer hover:border-primary transition-colors">
+<input type="radio" name="size" value="custom" class="hidden">
+<div class="w-12 h-12 flex items-center justify-center text-primary mb-3">
+<i class="ri-pencil-ruler-2-line text-2xl"></i>
+</div>
+<span class="text-center">Нестандартный<br>(свои размеры)</span>
+</label>
+</div>
+</div>
+</div>
+<div class="quiz-step hidden" data-step="4">
+<div class="mb-8">
+<div class="text-sm text-primary font-medium mb-2">Вопрос 4 из 4</div>
+<h3 class="text-xl font-semibold text-gray-900 mb-4">Когда планируете заказать?</h3>
+<div class="grid grid-cols-2 gap-4">
+<label class="flex flex-col items-center p-4 border border-gray-200 rounded-lg cursor-pointer hover:border-primary transition-colors">
+<input type="radio" name="timing" value="now" class="hidden">
+<div class="w-12 h-12 flex items-center justify-center text-primary mb-3">
+<i class="ri-timer-flash-line text-2xl"></i>
+</div>
+<span class="text-center">В ближайшее время</span>
+</label>
+<label class="flex flex-col items-center p-4 border border-gray-200 rounded-lg cursor-pointer hover:border-primary transition-colors">
+<input type="radio" name="timing" value="later" class="hidden">
+<div class="w-12 h-12 flex items-center justify-center text-primary mb-3">
+<i class="ri-calendar-line text-2xl"></i>
+</div>
+<span class="text-center">В течение месяца</span>
+</label>
+</div>
+</div>
+</div>
+<div class="quiz-step hidden" data-step="result">
+<div class="text-center">
+<div class="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-6">
+<i class="ri-check-line text-3xl text-primary"></i>
+</div>
+<h3 class="text-2xl font-bold text-gray-900 mb-4">Спасибо за ответы!</h3>
+<p class="text-gray-600 mb-6">На основе ваших ответов мы подготовили предварительный расчет:</p>
+<div class="bg-gray-50 rounded-lg p-6 mb-6">
+<div class="text-4xl font-bold text-primary mb-2" id="quizPrice">12 500 ₽</div>
+<p class="text-gray-600">Предварительная стоимость</p>
+</div>
+<p class="text-sm text-gray-500 mb-6">* Точная стоимость будет рассчитана после уточнения всех деталей</p>
+<button onclick="openModal('orderModal')" class="bg-primary text-white px-8 py-4 text-lg font-medium !rounded-button hover:bg-primary/90 transition-colors whitespace-nowrap shadow-lg">Заказать со скидкой 20%</button>
+</div>
+</div>
+<div class="flex justify-between mt-8">
+<button id="prevBtn" class="hidden px-6 py-2 border border-gray-300 rounded-full text-gray-700 hover:bg-gray-50 transition-colors">
+<i class="ri-arrow-left-s-line mr-2"></i>Назад
+</button>
+<button id="nextBtn" class="ml-auto px-6 py-2 bg-primary text-white rounded-full hover:bg-primary/90 transition-colors">
+Далее<i class="ri-arrow-right-s-line ml-2"></i>
+</button>
+</div>
+</div>
+</div>
+</section>
+<!-- Отзывы -->
+<section class="py-16 bg-gray-50">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<h2 class="text-3xl font-bold text-center text-gray-900 mb-12">Отзывы наших клиентов</h2>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<div class="bg-white p-6 rounded-lg shadow-md border border-gray-200">
+<div class="flex items-center mb-4">
+<img src="https://readdy.ai/api/search-image?query=professional%20headshot%20of%20a%20middle-aged%20businessman%20with%20a%20friendly%20smile%2C%20wearing%20a%20suit%2C%20corporate%20portrait%2C%20light%20background&width=100&height=100&seq=11&orientation=squarish" alt="Александр Васильев" class="w-12 h-12 rounded-full object-cover mr-4">
+<div>
+<h3 class="font-semibold text-gray-900">Александр Васильев</h3>
+<p class="text-gray-600">Владелец ресторана</p>
+</div>
+</div>
+<div class="flex text-yellow-400 mb-2">
+<i class="ri-star-fill"></i>
+<i class="ri-star-fill"></i>
+<i class="ri-star-fill"></i>
+<i class="ri-star-fill"></i>
+<i class="ri-star-fill"></i>
+</div>
+<p class="text-gray-600">Заказывали подстолья для всего ресторана. Качество превзошло ожидания. Конструкции очень прочные, покраска равномерная. Монтаж выполнили быстро и аккуратно.</p>
+</div>
+<div class="bg-white p-6 rounded-lg shadow-md border border-gray-200">
+<div class="flex items-center mb-4">
+<img src="https://readdy.ai/api/search-image?query=professional%20headshot%20of%20a%20young%20female%20interior%20designer%20with%20modern%20glasses%2C%20creative%20professional%20portrait%2C%20light%20background&width=100&height=100&seq=12&orientation=squarish" alt="Екатерина Морозова" class="w-12 h-12 rounded-full object-cover mr-4">
+<div>
+<h3 class="font-semibold text-gray-900">Екатерина Морозова</h3>
+<p class="text-gray-600">Дизайнер интерьеров</p>
+</div>
+</div>
+<div class="flex text-yellow-400 mb-2">
+<i class="ri-star-fill"></i>
+<i class="ri-star-fill"></i>
+<i class="ri-star-fill"></i>
+<i class="ri-star-fill"></i>
+<i class="ri-star-fill"></i>
+</div>
+<p class="text-gray-600">Регулярно заказываю подстолья для своих проектов. Всегда идеальное исполнение, точные размеры и сроки. Клиенты в восторге от качества и дизайна.</p>
+</div>
+<div class="bg-white p-6 rounded-lg shadow-md border border-gray-200">
+<div class="flex items-center mb-4">
+<img src="https://readdy.ai/api/search-image?query=professional%20headshot%20of%20a%20mature%20businessman%20with%20gray%20hair%2C%20wearing%20casual%20business%20attire%2C%20corporate%20portrait%2C%20light%20background&width=100&height=100&seq=13&orientation=squarish" alt="Дмитрий Николаев" class="w-12 h-12 rounded-full object-cover mr-4">
+<div>
+<h3 class="font-semibold text-gray-900">Дмитрий Николаев</h3>
+<p class="text-gray-600">Руководитель офиса</p>
+</div>
+</div>
+<div class="flex text-yellow-400 mb-2">
+<i class="ri-star-fill"></i>
+<i class="ri-star-fill"></i>
+<i class="ri-star-fill"></i>
+<i class="ri-star-fill"></i>
+<i class="ri-star-fill"></i>
+</div>
+<p class="text-gray-600">Заказывали столы для переговорной. Подстолья отличного качества, выглядят солидно и дорого. Особенно порадовала оперативная доставка и профессиональный монтаж.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Часто задаваемые вопросы -->
+<section class="py-16 bg-gray-50">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<h2 class="text-3xl font-bold text-center text-gray-900 mb-12">Часто задаваемые вопросы</h2>
+<div class="max-w-3xl mx-auto space-y-6">
+<div class="bg-white rounded-lg shadow-md p-6 cursor-pointer faq-item">
+<div class="flex justify-between items-center">
+<h3 class="text-lg font-semibold text-gray-900">Какие материалы используются для изготовления подстолий?</h3>
+<div class="w-6 h-6 flex items-center justify-center text-primary transform transition-transform faq-icon">
+<i class="ri-arrow-down-s-line"></i>
+</div>
+</div>
+<div class="mt-4 text-gray-600 hidden faq-answer">
+Мы используем высококачественную конструкционную сталь толщиной 4 мм. Все элементы проходят антикоррозийную обработку и покрываются износостойкой порошковой краской.
+</div>
+</div>
+<div class="bg-white rounded-lg shadow-md p-6 cursor-pointer faq-item">
+<div class="flex justify-between items-center">
+<h3 class="text-lg font-semibold text-gray-900">Как рассчитывается стоимость подстолья?</h3>
+<div class="w-6 h-6 flex items-center justify-center text-primary transform transition-transform faq-icon">
+<i class="ri-arrow-down-s-line"></i>
+</div>
+</div>
+<div class="mt-4 text-gray-600 hidden faq-answer">
+Стоимость зависит от размеров, конфигурации и типа покрытия. Для точного расчета используйте калькулятор на сайте или свяжитесь с нашими менеджерами.
+</div>
+</div>
+<div class="bg-white rounded-lg shadow-md p-6 cursor-pointer faq-item">
+<div class="flex justify-between items-center">
+<h3 class="text-lg font-semibold text-gray-900">Какие сроки изготовления?</h3>
+<div class="w-6 h-6 flex items-center justify-center text-primary transform transition-transform faq-icon">
+<i class="ri-arrow-down-s-line"></i>
+</div>
+</div>
+<div class="mt-4 text-gray-600 hidden faq-answer">
+Стандартный срок изготовления - 5 рабочих дней. При срочном заказе возможно ускорение до 3 дней. Точные сроки зависят от сложности конструкции и текущей загрузки производства.
+</div>
+</div>
+<div class="bg-white rounded-lg shadow-md p-6 cursor-pointer faq-item">
+<div class="flex justify-between items-center">
+<h3 class="text-lg font-semibold text-gray-900">Как осуществляется доставка и монтаж?</h3>
+<div class="w-6 h-6 flex items-center justify-center text-primary transform transition-transform faq-icon">
+<i class="ri-arrow-down-s-line"></i>
+</div>
+</div>
+<div class="mt-4 text-gray-600 hidden faq-answer">
+Доставка по городу осуществляется бесплатно. Монтаж выполняется нашими специалистами в удобное для вас время. Стоимость монтажа зависит от количества изделий и сложности работ.
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="process" class="py-16 bg-white">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<h2 class="text-3xl font-bold text-center text-gray-900 mb-12">Процесс заказа</h2>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+<div class="relative">
+<div class="w-16 h-16 bg-primary text-white rounded-full flex items-center justify-center text-2xl font-bold mb-6 mx-auto">1</div>
+<div class="text-center">
+<div class="w-16 h-16 flex items-center justify-center text-primary text-4xl mx-auto mb-4">
+<i class="ri-file-list-3-line"></i>
+</div>
+<h3 class="text-xl font-semibold text-gray-900 mb-2">Оставляете заявку</h3>
+<p class="text-gray-600">Заполняете форму или звоните нам по телефону</p>
+</div>
+<div class="hidden lg:block absolute top-12 left-full w-full h-1 bg-gray-200 -z-10 transform -translate-x-8"></div>
+</div>
+<div class="relative">
+<div class="w-16 h-16 bg-primary text-white rounded-full flex items-center justify-center text-2xl font-bold mb-6 mx-auto">2</div>
+<div class="text-center">
+<div class="w-16 h-16 flex items-center justify-center text-primary text-4xl mx-auto mb-4">
+<i class="ri-ruler-2-line"></i>
+</div>
+<h3 class="text-xl font-semibold text-gray-900 mb-2">Согласовываем размеры</h3>
+<p class="text-gray-600">Уточняем все детали и согласовываем проект</p>
+</div>
+<div class="hidden lg:block absolute top-12 left-full w-full h-1 bg-gray-200 -z-10 transform -translate-x-8"></div>
+</div>
+<div class="relative">
+<div class="w-16 h-16 bg-primary text-white rounded-full flex items-center justify-center text-2xl font-bold mb-6 mx-auto">3</div>
+<div class="text-center">
+<div class="w-16 h-16 flex items-center justify-center text-primary text-4xl mx-auto mb-4">
+<i class="ri-tools-line"></i>
+</div>
+<h3 class="text-xl font-semibold text-gray-900 mb-2">Производство 5 дней</h3>
+<p class="text-gray-600">Изготавливаем подстолье по вашим размерам</p>
+</div>
+<div class="hidden lg:block absolute top-12 left-full w-full h-1 bg-gray-200 -z-10 transform -translate-x-8"></div>
+</div>
+<div>
+<div class="w-16 h-16 bg-primary text-white rounded-full flex items-center justify-center text-2xl font-bold mb-6 mx-auto">4</div>
+<div class="text-center">
+<div class="w-16 h-16 flex items-center justify-center text-primary text-4xl mx-auto mb-4">
+<i class="ri-truck-line"></i>
+</div>
+<h3 class="text-xl font-semibold text-gray-900 mb-2">Доставка и установка</h3>
+<p class="text-gray-600">Бесплатно доставляем и помогаем с установкой</p>
+</div>
+</div>
+</div>
+<div class="mt-16 text-center">
+<button onclick="openModal('orderModal')" class="bg-primary text-white px-8 py-4 text-lg font-medium !rounded-button hover:bg-primary/90 transition-colors whitespace-nowrap shadow-lg">Оформить заказ</button>
+</div>
+</div>
+</section>
+<!-- Форма обратной связи -->
+<section id="contact" class="py-16 bg-gray-50">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="bg-white rounded-lg shadow-lg overflow-hidden">
+<div class="grid grid-cols-1 md:grid-cols-2">
+<div class="p-10">
+<h2 class="text-3xl font-bold text-gray-900 mb-6">Получить консультацию</h2>
+<p class="text-gray-600 mb-8">Оставьте свои контактные данные, и наш специалист свяжется с вами в ближайшее время для консультации по вашему заказу.</p>
+<form id="contactForm" class="space-y-6">
+<div>
+<label for="name" class="block text-sm font-medium text-gray-700 mb-1">Имя</label>
+<input type="text" id="name" name="name" class="w-full px-4 py-3 border border-gray-300 rounded focus:ring-primary" required>
+</div>
+<div>
+<label for="phone" class="block text-sm font-medium text-gray-700 mb-1">Телефон</label>
+<input type="tel" id="phone" name="phone" class="w-full px-4 py-3 border border-gray-300 rounded focus:ring-primary" required>
+</div>
+<div>
+<label for="comment" class="block text-sm font-medium text-gray-700 mb-1">Комментарий</label>
+<textarea id="comment" name="comment" rows="4" class="w-full px-4 py-3 border border-gray-300 rounded focus:ring-primary"></textarea>
+</div>
+<div>
+<button type="submit" class="w-full bg-primary text-white py-3 !rounded-button hover:bg-primary/90 transition-colors whitespace-nowrap">Отправить</button>
+</div>
+<div class="text-sm text-gray-500">
+Нажимая на кнопку, вы даете согласие на обработку персональных данных
+</div>
+</form>
+</div>
+<div style="background-image: url('https://readdy.ai/api/search-image?query=Modern%20interior%20with%20stylish%20black%20metal%20table%20base%20supporting%20a%20wooden%20tabletop%2C%20minimalist%20loft%20style%20room%2C%20industrial%20design%20elements%2C%20professional%20interior%20photography&width=600&height=800&seq=6&orientation=portrait'); background-size: cover; background-position: center;" class="hidden md:block"></div>
+</div>
+</div>
+</div>
+</section>
+<!-- Футер -->
+<footer class="bg-gray-800 text-white py-12">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+<div>
+<span class="text-3xl font-['Pacifico'] text-white mb-6 block">Подстолья</span>
+<p class="text-gray-400 mb-6">Производство дизайнерских подстолий из металла для любых типов столов.</p>
+<div class="flex space-x-4">
+<a href="#" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-primary transition-colors">
+<div class="w-5 h-5 flex items-center justify-center">
+<i class="ri-telegram-line text-white"></i>
+</div>
+</a>
+<a href="#" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-primary transition-colors">
+<div class="w-5 h-5 flex items-center justify-center">
+<i class="ri-whatsapp-line text-white"></i>
+</div>
+</a>
+<a href="#" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-primary transition-colors">
+<div class="w-5 h-5 flex items-center justify-center">
+<i class="ri-instagram-line text-white"></i>
+</div>
+</a>
+</div>
+</div>
+<div>
+<h3 class="text-lg font-semibold mb-6">Контакты</h3>
+<ul class="space-y-4">
+<li class="flex items-start">
+<div class="w-5 h-5 flex items-center justify-center text-gray-400 mr-3 mt-1">
+<i class="ri-map-pin-line"></i>
+</div>
+<span>г. Москва, ул. Металлургов, д. 15, стр. 3</span>
+</li>
+<li class="flex items-start">
+<div class="w-5 h-5 flex items-center justify-center text-gray-400 mr-3 mt-1">
+<i class="ri-phone-line"></i>
+</div>
+<span>+7 (495) 123-45-67</span>
+</li>
+<li class="flex items-start">
+<div class="w-5 h-5 flex items-center justify-center text-gray-400 mr-3 mt-1">
+<i class="ri-mail-line"></i>
+</div>
+<span>info@podstolya.ru</span>
+</li>
+</ul>
+</div>
+<div>
+<h3 class="text-lg font-semibold mb-6">Режим работы</h3>
+<ul class="space-y-4">
+<li class="flex items-start">
+<div class="w-5 h-5 flex items-center justify-center text-gray-400 mr-3 mt-1">
+<i class="ri-time-line"></i>
+</div>
+<div>
+<p>Пн-Пт: 9:00 - 20:00</p>
+<p>Сб: 10:00 - 18:00</p>
+<p>Вс: выходной</p>
+</div>
+</li>
+</ul>
+<div class="mt-6">
+<h3 class="text-lg font-semibold mb-4">Способы оплаты</h3>
+<div class="flex space-x-4">
+<div class="w-10 h-6 flex items-center justify-center">
+<i class="ri-visa-fill text-2xl text-gray-300"></i>
+</div>
+<div class="w-10 h-6 flex items-center justify-center">
+<i class="ri-mastercard-fill text-2xl text-gray-300"></i>
+</div>
+<div class="w-10 h-6 flex items-center justify-center">
+<i class="ri-bank-card-fill text-2xl text-gray-300"></i>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="border-t border-gray-800 mt-12 pt-8 text-center text-gray-500">
+<p>© 2025 Подстолья. Все права защищены.</p>
+</div>
+</div>
+</footer>
+<!-- Модальные окна -->
+<!-- Модальное окно заказа маленького подстолья -->
+<div id="orderModalSmall" class="modal">
+<div class="modal-content p-8 max-w-md w-full mx-4">
+<div class="flex justify-between items-center mb-6">
+<h3 class="text-2xl font-bold text-gray-900">Заказать подстолье для журнального стола</h3>
+<button onclick="closeModal('orderModalSmall')" class="text-gray-500 hover:text-gray-700">
+<div class="w-6 h-6 flex items-center justify-center">
+<i class="ri-close-line text-xl"></i>
+</div>
+</button>
+</div>
+<div class="mb-6">
+<div class="flex items-center justify-between text-lg mb-4">
+<span class="font-medium">Размер:</span>
+<span>400×400×450 мм</span>
+</div>
+<div class="flex items-center justify-between text-lg mb-4">
+<span class="font-medium">Цена:</span>
+<span class="text-primary font-bold">7 900 ₽</span>
+</div>
+</div>
+<form id="orderFormSmall" class="space-y-4">
+<input type="hidden" name="type" value="small">
+<input type="hidden" name="size" value="400×400×450">
+<input type="hidden" name="price" value="7900">
+<div>
+<label for="orderNameSmall" class="block text-sm font-medium text-gray-700 mb-1">Имя</label>
+<input type="text" id="orderNameSmall" name="name" class="w-full px-4 py-3 border border-gray-300 rounded" required>
+</div>
+<div>
+<label for="orderPhoneSmall" class="block text-sm font-medium text-gray-700 mb-1">Телефон</label>
+<input type="tel" id="orderPhoneSmall" name="phone" class="w-full px-4 py-3 border border-gray-300 rounded" required>
+</div>
+<div>
+<label for="orderCommentSmall" class="block text-sm font-medium text-gray-700 mb-1">Комментарий</label>
+<textarea id="orderCommentSmall" name="comment" rows="3" class="w-full px-4 py-3 border border-gray-300 rounded"></textarea>
+</div>
+<div>
+<button type="submit" class="w-full bg-primary text-white py-3 !rounded-button hover:bg-primary/90 transition-colors whitespace-nowrap">Отправить заявку</button>
+</div>
+<div class="text-sm text-gray-500">
+Нажимая на кнопку, вы даете согласие на обработку персональных данных
+</div>
+</form>
+</div>
+</div>
+<!-- Модальное окно заказа среднего подстолья -->
+<div id="orderModalMedium" class="modal">
+<div class="modal-content p-8 max-w-md w-full mx-4">
+<div class="flex justify-between items-center mb-6">
+<h3 class="text-2xl font-bold text-gray-900">Заказать подстолье для обеденного стола</h3>
+<button onclick="closeModal('orderModalMedium')" class="text-gray-500 hover:text-gray-700">
+<div class="w-6 h-6 flex items-center justify-center">
+<i class="ri-close-line text-xl"></i>
+</div>
+</button>
+</div>
+<div class="mb-6">
+<div class="flex items-center justify-between text-lg mb-4">
+<span class="font-medium">Размер:</span>
+<span>700×700×750 мм</span>
+</div>
+<div class="flex items-center justify-between text-lg mb-4">
+<span class="font-medium">Цена:</span>
+<span class="text-primary font-bold">12 500 ₽</span>
+</div>
+</div>
+<form id="orderFormMedium" class="space-y-4">
+<input type="hidden" name="type" value="medium">
+<input type="hidden" name="size" value="700×700×750">
+<input type="hidden" name="price" value="12500">
+<div>
+<label for="orderNameMedium" class="block text-sm font-medium text-gray-700 mb-1">Имя</label>
+<input type="text" id="orderNameMedium" name="name" class="w-full px-4 py-3 border border-gray-300 rounded" required>
+</div>
+<div>
+<label for="orderPhoneMedium" class="block text-sm font-medium text-gray-700 mb-1">Телефон</label>
+<input type="tel" id="orderPhoneMedium" name="phone" class="w-full px-4 py-3 border border-gray-300 rounded" required>
+</div>
+<div>
+<label for="orderCommentMedium" class="block text-sm font-medium text-gray-700 mb-1">Комментарий</label>
+<textarea id="orderCommentMedium" name="comment" rows="3" class="w-full px-4 py-3 border border-gray-300 rounded"></textarea>
+</div>
+<div>
+<button type="submit" class="w-full bg-primary text-white py-3 !rounded-button hover:bg-primary/90 transition-colors whitespace-nowrap">Отправить заявку</button>
+</div>
+<div class="text-sm text-gray-500">
+Нажимая на кнопку, вы даете согласие на обработку персональных данных
+</div>
+</form>
+</div>
+</div>
+<!-- Модальное окно заказа большого подстолья -->
+<div id="orderModalLarge" class="modal">
+<div class="modal-content p-8 max-w-md w-full mx-4">
+<div class="flex justify-between items-center mb-6">
+<h3 class="text-2xl font-bold text-gray-900">Заказать подстолье для конференц-стола</h3>
+<button onclick="closeModal('orderModalLarge')" class="text-gray-500 hover:text-gray-700">
+<div class="w-6 h-6 flex items-center justify-center">
+<i class="ri-close-line text-xl"></i>
+</div>
+</button>
+</div>
+<div class="mb-6">
+<div class="flex items-center justify-between text-lg mb-4">
+<span class="font-medium">Размер:</span>
+<span>1200×800×750 мм</span>
+</div>
+<div class="flex items-center justify-between text-lg mb-4">
+<span class="font-medium">Цена:</span>
+<span class="text-primary font-bold">18 900 ₽</span>
+</div>
+</div>
+<form id="orderFormLarge" class="space-y-4">
+<input type="hidden" name="type" value="large">
+<input type="hidden" name="size" value="1200×800×750">
+<input type="hidden" name="price" value="18900">
+<div>
+<label for="orderNameLarge" class="block text-sm font-medium text-gray-700 mb-1">Имя</label>
+<input type="text" id="orderNameLarge" name="name" class="w-full px-4 py-3 border border-gray-300 rounded" required>
+</div>
+<div>
+<label for="orderPhoneLarge" class="block text-sm font-medium text-gray-700 mb-1">Телефон</label>
+<input type="tel" id="orderPhoneLarge" name="phone" class="w-full px-4 py-3 border border-gray-300 rounded" required>
+</div>
+<div>
+<label for="orderCommentLarge" class="block text-sm font-medium text-gray-700 mb-1">Комментарий</label>
+<textarea id="orderCommentLarge" name="comment" rows="3" class="w-full px-4 py-3 border border-gray-300 rounded"></textarea>
+</div>
+<div>
+<button type="submit" class="w-full bg-primary text-white py-3 !rounded-button hover:bg-primary/90 transition-colors whitespace-nowrap">Отправить заявку</button>
+</div>
+<div class="text-sm text-gray-500">
+Нажимая на кнопку, вы даете согласие на обработку персональных данных
+</div>
+</form>
+</div>
+</div>
+<!-- Модальное окно заказа -->
+<div id="orderModal" class="modal">
+<div class="modal-content p-8 max-w-md w-full mx-4">
+<div class="flex justify-between items-center mb-6">
+<h3 class="text-2xl font-bold text-gray-900">Заказать подстолье</h3>
+<button onclick="closeModal('orderModal')" class="text-gray-500 hover:text-gray-700">
+<div class="w-6 h-6 flex items-center justify-center">
+<i class="ri-close-line text-xl"></i>
+</div>
+</button>
+</div>
+<form id="orderForm" class="space-y-4">
+<div>
+<label for="orderName" class="block text-sm font-medium text-gray-700 mb-1">Имя</label>
+<input type="text" id="orderName" name="name" class="w-full px-4 py-3 border border-gray-300 rounded" required>
+</div>
+<div>
+<label for="orderPhone" class="block text-sm font-medium text-gray-700 mb-1">Телефон</label>
+<input type="tel" id="orderPhone" name="phone" class="w-full px-4 py-3 border border-gray-300 rounded" required>
+</div>
+<div>
+<label for="orderSize" class="block text-sm font-medium text-gray-700 mb-1">Размеры (ДxШxВ, мм)</label>
+<input type="text" id="orderSize" name="size" placeholder="например: 700x700x750" class="w-full px-4 py-3 border border-gray-300 rounded">
+</div>
+<div>
+<label for="orderComment" class="block text-sm font-medium text-gray-700 mb-1">Комментарий</label>
+<textarea id="orderComment" name="comment" rows="3" class="w-full px-4 py-3 border border-gray-300 rounded"></textarea>
+</div>
+<div>
+<button type="submit" class="w-full bg-primary text-white py-3 !rounded-button hover:bg-primary/90 transition-colors whitespace-nowrap">Отправить заявку</button>
+</div>
+<div class="text-sm text-gray-500">
+Нажимая на кнопку, вы даете согласие на обработку персональных данных
+</div>
+</form>
+</div>
+</div>
+<!-- Модальное окно калькулятора -->
+<div id="calcModal" class="modal">
+<div class="modal-content p-8 max-w-md w-full mx-4">
+<div class="flex justify-between items-center mb-6">
+<h3 class="text-2xl font-bold text-gray-900">Рассчитать стоимость</h3>
+<button onclick="closeModal('calcModal')" class="text-gray-500 hover:text-gray-700">
+<div class="w-6 h-6 flex items-center justify-center">
+<i class="ri-close-line text-xl"></i>
+</div>
+</button>
+</div>
+<form id="calcForm" class="space-y-4">
+<div>
+<label class="block text-sm font-medium text-gray-700 mb-1">Тип подстолья</label>
+<div class="grid grid-cols-2 gap-4">
+<label class="flex items-center p-3 border border-gray-300 rounded cursor-pointer hover:border-primary">
+<input type="radio" name="type" value="square" class="hidden" checked>
+<div class="w-5 h-5 border border-gray-300 rounded-full mr-3 flex items-center justify-center">
+<div class="w-3 h-3 rounded-full bg-primary hidden radio-checked"></div>
+</div>
+<div class="flex items-center">
+<div class="w-6 h-6 flex items-center justify-center mr-2">
+<i class="ri-layout-grid-line text-primary"></i>
+</div>
+<span>Квадратное</span>
+</div>
+</label>
+<label class="flex items-center p-3 border border-gray-300 rounded cursor-pointer hover:border-primary">
+<input type="radio" name="type" value="rectangular" class="hidden">
+<div class="w-5 h-5 border border-gray-300 rounded-full mr-3 flex items-center justify-center">
+<div class="w-3 h-3 rounded-full bg-primary hidden radio-checked"></div>
+</div>
+<div class="flex items-center">
+<div class="w-6 h-6 flex items-center justify-center mr-2">
+<i class="ri-layout-right-line text-primary"></i>
+</div>
+<span>Прямоугольное</span>
+</div>
+</label>
+</div>
+</div>
+<div class="grid grid-cols-3 gap-4">
+<div>
+<label for="calcLength" class="block text-sm font-medium text-gray-700 mb-1">Длина (мм)</label>
+<input type="number" id="calcLength" name="length" min="300" max="2000" value="700" class="w-full px-4 py-3 border border-gray-300 rounded">
+</div>
+<div>
+<label for="calcWidth" class="block text-sm font-medium text-gray-700 mb-1">Ширина (мм)</label>
+<input type="number" id="calcWidth" name="width" min="300" max="1200" value="700" class="w-full px-4 py-3 border border-gray-300 rounded">
+</div>
+<div>
+<label for="calcHeight" class="block text-sm font-medium text-gray-700 mb-1">Высота (мм)</label>
+<input type="number" id="calcHeight" name="height" min="300" max="1000" value="750" class="w-full px-4 py-3 border border-gray-300 rounded">
+</div>
+</div>
+<div>
+<label class="block text-sm font-medium text-gray-700 mb-1">Цвет покраски</label>
+<div class="grid grid-cols-3 gap-4">
+<label class="flex flex-col items-center p-3 border border-gray-300 rounded cursor-pointer hover:border-primary">
+<input type="radio" name="color" value="black" class="hidden" checked>
+<div class="w-8 h-8 bg-black rounded-full mb-2 border-2 border-white outline outline-1 outline-gray-300"></div>
+<span class="text-sm">Черный</span>
+</label>
+<label class="flex flex-col items-center p-3 border border-gray-300 rounded cursor-pointer hover:border-primary">
+<input type="radio" name="color" value="white" class="hidden">
+<div class="w-8 h-8 bg-white rounded-full mb-2 border-2 border-white outline outline-1 outline-gray-300"></div>
+<span class="text-sm">Белый</span>
+</label>
+<label class="flex flex-col items-center p-3 border border-gray-300 rounded cursor-pointer hover:border-primary">
+<input type="radio" name="color" value="gray" class="hidden">
+<div class="w-8 h-8 bg-gray-500 rounded-full mb-2 border-2 border-white outline outline-1 outline-gray-300"></div>
+<span class="text-sm">Серый</span>
+</label>
+</div>
+</div>
+<div class="border-t border-gray-200 pt-4">
+<div class="flex justify-between items-center mb-4">
+<span class="text-gray-700">Стоимость:</span>
+<span class="text-2xl font-bold text-primary" id="calcPrice">12 500 ₽</span>
+</div>
+<button type="submit" class="w-full bg-primary text-white py-3 !rounded-button hover:bg-primary/90 transition-colors whitespace-nowrap">Заказать по этой цене</button>
+</div>
+</form>
+</div>
+</div>
+<!-- Модальные окна преимуществ -->
+<div id="advantageModal1" class="modal">
+<div class="modal-content p-8 max-w-md w-full mx-4">
+<div class="flex justify-between items-center mb-6">
+<h3 class="text-2xl font-bold text-gray-900">Прочная сталь 4мм</h3>
+<button onclick="closeModal('advantageModal1')" class="text-gray-500 hover:text-gray-700">
+<div class="w-6 h-6 flex items-center justify-center">
+<i class="ri-close-line text-xl"></i>
+</div>
+</button>
+</div>
+<div class="space-y-4">
+<img src="https://readdy.ai/api/search-image?query=Close-up%20of%204mm%20thick%20steel%20metal%20plate%2C%20industrial%20material%2C%20showing%20thickness%20and%20durability%2C%20professional%20product%20photography%20on%20white%20background&width=400&height=300&seq=7&orientation=landscape" alt="Сталь 4мм" class="w-full rounded-lg">
+<p class="text-gray-700">Наши подстолья изготавливаются из высококачественной конструкционной стали толщиной 4 мм. Это обеспечивает исключительную прочность и долговечность конструкции.</p>
+<ul class="space-y-2">
+<li class="flex items-start">
+<div class="w-5 h-5 flex items-center justify-center text-primary mr-2 mt-1">
+<i class="ri-check-line"></i>
+</div>
+<span>Выдерживает нагрузку до 300 кг</span>
+</li>
+<li class="flex items-start">
+<div class="w-5 h-5 flex items-center justify-center text-primary mr-2 mt-1">
+<i class="ri-check-line"></i>
+</div>
+<span>Не деформируется со временем</span>
+</li>
+<li class="flex items-start">
+<div class="w-5 h-5 flex items-center justify-center text-primary mr-2 mt-1">
+<i class="ri-check-line"></i>
+</div>
+<span>Устойчивая конструкция без шатаний</span>
+</li>
+<li class="flex items-start">
+<div class="w-5 h-5 flex items-center justify-center text-primary mr-2 mt-1">
+<i class="ri-check-line"></i>
+</div>
+<span>Прослужит десятилетия без потери качеств</span>
+</li>
+</ul>
+<button onclick="openModal('orderModal'); closeModal('advantageModal1')" class="w-full bg-primary text-white py-3 !rounded-button hover:bg-primary/90 transition-colors whitespace-nowrap mt-4">Заказать подстолье</button>
+</div>
+</div>
+</div>
+<div id="advantageModal2" class="modal">
+<div class="modal-content p-8 max-w-md w-full mx-4">
+<div class="flex justify-between items-center mb-6">
+<h3 class="text-2xl font-bold text-gray-900">Порошковая покраска</h3>
+<button onclick="closeModal('advantageModal2')" class="text-gray-500 hover:text-gray-700">
+<div class="w-6 h-6 flex items-center justify-center">
+<i class="ri-close-line text-xl"></i>
+</div>
+</button>
+</div>
+<div class="space-y-4">
+<img src="https://readdy.ai/api/search-image?query=Close-up%20of%20powder%20coated%20black%20metal%20surface%2C%20showing%20the%20matte%20finish%20and%20texture%2C%20industrial%20material%2C%20professional%20product%20photography%20on%20white%20background&width=400&height=300&seq=8&orientation=landscape" alt="Порошковая покраска" class="w-full rounded-lg">
+<p class="text-gray-700">Мы используем современную технологию порошковой покраски, которая обеспечивает превосходную защиту металла и эстетичный внешний вид на долгие годы.</p>
+<ul class="space-y-2">
+<li class="flex items-start">
+<div class="w-5 h-5 flex items-center justify-center text-primary mr-2 mt-1">
+<i class="ri-check-line"></i>
+</div>
+<span>Устойчивость к царапинам и сколам</span>
+</li>
+<li class="flex items-start">
+<div class="w-5 h-5 flex items-center justify-center text-primary mr-2 mt-1">
+<i class="ri-check-line"></i>
+</div>
+<span>Защита от коррозии и ржавчины</span>
+</li>
+<li class="flex items-start">
+<div class="w-5 h-5 flex items-center justify-center text-primary mr-2 mt-1">
+<i class="ri-check-line"></i>
+</div>
+<span>Стойкость к выцветанию и воздействию УФ-лучей</span>
+</li>
+<li class="flex items-start">
+<div class="w-5 h-5 flex items-center justify-center text-primary mr-2 mt-1">
+<i class="ri-check-line"></i>
+</div>
+<span>Широкая палитра цветов на выбор</span>
+</li>
+</ul>
+<button onclick="openModal('orderModal'); closeModal('advantageModal2')" class="w-full bg-primary text-white py-3 !rounded-button hover:bg-primary/90 transition-colors whitespace-nowrap mt-4">Заказать подстолье</button>
+</div>
+</div>
+</div>
+<div id="advantageModal3" class="modal">
+<div class="modal-content p-8 max-w-md w-full mx-4">
+<div class="flex justify-between items-center mb-6">
+<h3 class="text-2xl font-bold text-gray-900">Любой размер под заказ</h3>
+<button onclick="closeModal('advantageModal3')" class="text-gray-500 hover:text-gray-700">
+<div class="w-6 h-6 flex items-center justify-center">
+<i class="ri-close-line text-xl"></i>
+</div>
+</button>
+</div>
+<div class="space-y-4">
+<img src="https://readdy.ai/api/search-image?query=Different%20sizes%20of%20black%20metal%20table%20bases%20arranged%20together%2C%20showing%20size%20variety%2C%20custom%20dimensions%2C%20industrial%20design%2C%20professional%20product%20photography%20on%20white%20background&width=400&height=300&seq=9&orientation=landscape" alt="Разные размеры подстолий" class="w-full rounded-lg">
+<p class="text-gray-700">Мы изготавливаем подстолья по индивидуальным размерам заказчика. Это позволяет создать идеальное решение для любого интерьера и функциональных задач.</p>
+<ul class="space-y-2">
+<li class="flex items-start">
+<div class="w-5 h-5 flex items-center justify-center text-primary mr-2 mt-1">
+<i class="ri-check-line"></i>
+</div>
+<span>Изготовление по вашим чертежам</span>
+</li>
+<li class="flex items-start">
+<div class="w-5 h-5 flex items-center justify-center text-primary mr-2 mt-1">
+<i class="ri-check-line"></i>
+</div>
+<span>Помощь в подборе оптимальных размеров</span>
+</li>
+<li class="flex items-start">
+<div class="w-5 h-5 flex items-center justify-center text-primary mr-2 mt-1">
+<i class="ri-check-line"></i>
+</div>
+<span>Возможность создания нестандартных форм</span>
+</li>
+<li class="flex items-start">
+<div class="w-5 h-5 flex items-center justify-center text-primary mr-2 mt-1">
+<i class="ri-check-line"></i>
+</div>
+<span>Подстолья для любых типов столешниц</span>
+</li>
+</ul>
+<button onclick="openModal('orderModal'); closeModal('advantageModal3')" class="w-full bg-primary text-white py-3 !rounded-button hover:bg-primary/90 transition-colors whitespace-nowrap mt-4">Заказать подстолье</button>
+</div>
+</div>
+</div>
+<div id="advantageModal4" class="modal">
+<div class="modal-content p-8 max-w-md w-full mx-4">
+<div class="flex justify-between items-center mb-6">
+<h3 class="text-2xl font-bold text-gray-900">Гарантия 3 года</h3>
+<button onclick="closeModal('advantageModal4')" class="text-gray-500 hover:text-gray-700">
+<div class="w-6 h-6 flex items-center justify-center">
+<i class="ri-close-line text-xl"></i>
+</div>
+</button>
+</div>
+<div class="space-y-4">
+<img src="https://readdy.ai/api/search-image?query=Warranty%20certificate%20with%20metal%20table%20base%20in%20the%20background%2C%20quality%20assurance%20document%2C%20guarantee%20stamp%2C%20professional%20business%20photography&width=400&height=300&seq=10&orientation=landscape" alt="Гарантийный сертификат" class="w-full rounded-lg">
+<p class="text-gray-700">Мы уверены в качестве наших изделий, поэтому предоставляем официальную гарантию 3 года на все подстолья. В течение этого срока мы бесплатно устраним любые производственные дефекты.</p>
+<ul class="space-y-2">
+<li class="flex items-start">
+<div class="w-5 h-5 flex items-center justify-center text-primary mr-2 mt-1">
+<i class="ri-check-line"></i>
+</div>
+<span>Официальный гарантийный сертификат</span>
+</li>
+<li class="flex items-start">
+<div class="w-5 h-5 flex items-center justify-center text-primary mr-2 mt-1">
+<i class="ri-check-line"></i>
+</div>
+<span>Бесплатное сервисное обслуживание</span>
+</li>
+<li class="flex items-start">
+<div class="w-5 h-5 flex items-center justify-center text-primary mr-2 mt-1">
+<i class="ri-check-line"></i>
+</div>
+<span>Быстрое реагирование на обращения</span>
+</li>
+<li class="flex items-start">
+<div class="w-5 h-5 flex items-center justify-center text-primary mr-2 mt-1">
+<i class="ri-check-line"></i>
+</div>
+<span>Возможность продления гарантии</span>
+</li>
+</ul>
+<button onclick="openModal('orderModal'); closeModal('advantageModal4')" class="w-full bg-primary text-white py-3 !rounded-button hover:bg-primary/90 transition-colors whitespace-nowrap mt-4">Заказать подстолье</button>
+</div>
+</div>
+</div>
+
+</body>
+</html>
